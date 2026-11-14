@@ -112,7 +112,7 @@ function App() {
             <div className="photo-glow" />
             <div className="photo-frame">
               <img
-                src="/public/profile.png"
+                src="/profile.png"
                 alt="Profile portrait"
                 className="profile-photo"
               />
