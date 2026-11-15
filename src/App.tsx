@@ -20,6 +20,7 @@ const projects = [
     description:
       "An early-classification project comparing machine learning models to predict video virality from early engagement signals.",
     tags: ["Scikit-learn", "Classification", "Feature Engineering", "Model Evaluation", "Machine Learning"],
+    link: "https://github.com/Kiyotaka-07/YT-shorts-virality-prediction---Comparison-of-machine-learning-models"
   },
 
   {
@@ -29,6 +30,7 @@ const projects = [
     description:
       "A team machine learning project with five members that estimating vehicle emission based on vehicle characteristics.",
     tags: ["Python", "XGBoost", "Streamlit", "Model Evaluation", "Feature Engineering", "Sci-kit Learn"],
+    link: "https://machine-learning-co2-vehicle-prediction.streamlit.app",
   },
 
   {
@@ -38,6 +40,7 @@ const projects = [
     description:
       "An AI-powered application exploring Indonesian stock data, market trends, and financial news to support stock analysis.",
     tags: ["Python", "LLM", "yfinance", "Streamlit"],
+    link: "https://stock-analyzer-ai-agent.streamlit.app",
   },
 ];
 
@@ -133,6 +136,7 @@ function App() {
               <span className="tag-icon">⌘</span>
               <span>Building & Learning</span>
             </div> */}
+
             <div className="visual-orbit orbit-one" />
             <div className="visual-orbit orbit-two" />
           </div>
@@ -265,9 +269,11 @@ function App() {
 
                 <a
                   className="project-link"
-                  href="#contact"
-                  aria-label={`Ask me about ${project.title}`}
-                  title="Project details coming soon"
+                  href={project.link}
+                  target="_blank"
+                  aria-label={`View ${project.title}`}
+                  rel="noreferrer"
+                  title="Project details (Github/Web page)"
                 >
                   ↗
                 </a>
